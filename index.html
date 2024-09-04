@@ -46,66 +46,123 @@
             backgroundImage: {
               leaf1: "url('./images/leaf01.png')",
               call_to_action: "url('./images/call.jpg')",
-              testimonials: "url('./images/testimonials.jpg')",
+              bannerImage: "url('./images/testimonials.jpg')",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-Poppins container mx-auto">
+  <body class="font-Poppins">
     <!-- Header Section Start -->
     <header>
-      <nav>
-        <div class="navbar p-0 py-3">
-          <div class="navbar-start">
-          
-            <a href="#" class="">
-              <img class="w-36" src="./images/logo.svg" alt="">
-            </a>
+      <nav class="navbar container mx-auto p-0 py-3">
+        <div class="navbar-start">
+          <a href="#" class="">
+            <img class="w-36" src="./images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li
+              class="hover:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <a>Home</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <a>Everythig</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <a>Groceries</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <a>About</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors duration-300 ease-in-out"
+            >
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex items-center gap-5 text-lg">
+            <button class="flex items-center font-semibold text-accent">
+              <span>$20.00</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-user"></i>
+            </button>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-lg font-medium">
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everythig</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Groceries</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <div class="flex items-center gap-5 text-lg">
-              <button class="flex items-center font-semibold text-accent">
-                <span>$20.00</span>
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-              <button>
-                <i class="fa-solid fa-user"></i>
-              </button>
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
             </div>
-          
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5"
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5"
+            >
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
               >
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everythig</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Groceries</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
-              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a></li>
-               
-                
-              </ul>
-            </div>
+                <a>Home</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a>Everythig</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a>Groceries</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a>About</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors duration-300 ease-in-out"
+              >
+                <a>Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
+      <!-- Banner Section Start -->
+      <section class=" bg-leaf1 bg-no-repeat bg-right-bottom">
+        <div class="w-full h-full bg-body bg-opacity-90">
+          <div class="lg:w-9/12 mx-auto py-28 flex sm:flex-row flex-col  items-center">
+            <div class="flex-1">
+              <img src="./images/bannerbg.png" alt="">
+            </div>
+            <div class="flex-1 sm:justify-start text-center ">
+              <h4 class="text-xl font font-semibold my-5">Best Quality Product</h4>
+              <h1 class="lg:text-6xl text-4xl font-semibold  leading-tight">Join The Organic Movement</h1>
+              <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati impedit, inventore enim modi eum harum sequi suscipit consectetur. Optio?
+              </p>
+              <div class="flex sm:justify-start justify-center">
+                <button class=" flex items-center gap-2 rounded-md hover:bg-primary bg-accent text-white px-10 py-6">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>shop now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
